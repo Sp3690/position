@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        background: #fff;
+        padding: 50px;
+    }
+
+    .card-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .card {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 150px;
+        margin: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    .icon-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #8a5a3d;
+        width: 60px;
+        height: 60px;
+        border-bottom-right-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .icon-top img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .icon-bg {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 32px;
+        left: 90px;
+        z-index: 0;
+    }
+
+    .text{
+        position: absolute;
+        bottom: 20px;
+        right: 125px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #000;
+        z-index: 3;
+        text-align: left;
+    }
+
+    .text_1{
+        position: absolute;
+        bottom: 20px;
+        right: 110px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #000;
+        z-index: 3;
+        text-align: left;
+    }
+
+    .learn-more {
+        margin-top: 30px;
+        color: #8a5a3d;
+        font-size: 18px;
+        position: relative;
+    }
+</style>
+
+<body>
+    <div class="card-wrapper">
+        <div class="card">
+            <div class="icon-top">
+                <img src="./wifi_img1.svg" alt="Parking">
+            </div>
+            <img src="./wifi_bgimg.svg" class="icon-bg" alt="Parking">
+            <div class="text">Free<br>Parking</div>
+        </div>
+
+        <div class="card">
+            <div class="icon-top">
+                <img src="./dinner_dining1.svg" alt="Breakfast">
+            </div>
+            <img src="./dinner_dining_bg.svg" class="icon-bg" alt="Breakfast">
+            <div class="text_1">Free<br>Breakfast</div>
+        </div>
+
+        <div class="card">
+            <div class="icon-top">
+                <img src="./exercise_img1.svg" alt="Fitness">
+            </div>
+            <img src="./exercise_img1bg.svg" class="icon-bg" alt="Fitness">
+            <div class="text">Fitness<br>Center</div>
+        </div>
+
+        <div class="card">
+            <div class="icon-top">
+                <img src="./business_center1.svg" alt="Events">
+            </div>
+            <img src="./business_center_bg.svg" class="icon-bg" alt="Events">
+            <div class="text_1">Meetings<br>& Events</div>
+        </div>
+    </div>
+
+    <div class="learn-more">Learn More</div>
+</body>
+
+</html>
